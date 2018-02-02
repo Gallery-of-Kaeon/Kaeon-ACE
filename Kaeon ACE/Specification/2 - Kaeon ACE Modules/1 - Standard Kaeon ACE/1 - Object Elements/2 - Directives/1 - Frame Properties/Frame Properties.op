@@ -1,0 +1,31 @@
+Frame Properties
+
+	Philosophy
+		
+		-
+			The frame properties are a series of fields that can be placed in the data section of a
+			directive.
+		-
+	
+	Principles
+		
+		Fields
+			
+			Fullscreen
+			
+				-
+					The fullscreen field has the alias "Fullscreen", and has no children.
+				-
+			
+			Icon
+			
+				-
+					The icon field has the alias "Icon", and has a child containing the file path
+					to an image as its content.
+				-
+			
+			Title
+			
+				-
+					The title field has the alias "Title", and has a child containing any string.
+				-

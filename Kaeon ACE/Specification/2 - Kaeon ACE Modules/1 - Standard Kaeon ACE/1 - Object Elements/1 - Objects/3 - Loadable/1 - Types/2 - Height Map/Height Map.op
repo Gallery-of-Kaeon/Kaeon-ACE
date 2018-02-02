@@ -1,0 +1,17 @@
+Height Map
+	
+	Philosophy
+		
+		-
+			A height map is a type of loadable that generates a mesh and a collider of a terrain
+			from an image.
+		-
+	
+	Principles
+		
+		Type
+			
+			-
+				The type field in the data section of the loadable must be specified as "Height
+				Map".
+			-

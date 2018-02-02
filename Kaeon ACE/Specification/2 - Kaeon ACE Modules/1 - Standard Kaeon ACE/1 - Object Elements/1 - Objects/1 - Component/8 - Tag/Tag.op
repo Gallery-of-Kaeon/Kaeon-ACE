@@ -1,0 +1,22 @@
+Tag
+	
+	Philosophy
+	
+		-
+			A tag object stores data for a tag identifier, and may act as a component.
+		-
+	
+	Principles
+		
+		Type Section
+		
+			-
+				The child of the type section must have the content "Tag".
+			-
+		
+		Data Section
+			
+			-
+				The data section must have a field with the alias "Tag" with its child's content
+				serving as the tag the object specifies.
+			-

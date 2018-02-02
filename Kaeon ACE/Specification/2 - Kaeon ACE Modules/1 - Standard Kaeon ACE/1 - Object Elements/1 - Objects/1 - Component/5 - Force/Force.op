@@ -1,0 +1,21 @@
+Force
+
+	Philosophy
+	
+		-
+			A force object stores data for a force, and may act as a component.
+		-
+	
+	Principles
+		
+		Type Section
+		
+			-
+				The child of the type section must have the content "Force".
+			-
+			
+		Children Section
+		
+			-
+				The children section must have a vector 3 object element nested within it.
+			-

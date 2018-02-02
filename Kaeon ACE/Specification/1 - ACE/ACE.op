@@ -1,0 +1,32 @@
+ACE
+	
+	Philosophy
+		
+		-
+			ACE is a ONE dialect that dictates a set of objects.
+		-
+	
+	Principles
+		
+		Structure
+			
+			-
+				An ACE document with consists entirely of object elements.
+				
+				The content of an object element specifies its alias. An object element will either
+				have a child with the content "Reference", or one or all of an element with the
+				content "Type", an element with the content "Children", and an element with the
+				content "Data". If the "Reference" element is present, it will have a single child
+				that references a predefined object to act as the object specified by its parent.
+				Otherwise, the content of the only child of the "Type" element will specify the
+				type of the object that the object element specifies, the children of the
+				"Children" element will be other object elements that specify objects that are
+				aggregated within the object specified by the object element, and the children of
+				the "Data" element will specify miscellaneous data about the object element.
+				
+				If referencing an object that has the same alias as another object, any previously
+				declared objects will take priority to subsequently declared objects, and objects
+				will take greater priority the closer they are to the referencing object.
+				
+				The letter casing of the content of the aforementioned elements is irrelevant.
+			-
