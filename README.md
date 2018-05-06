@@ -11,7 +11,9 @@ and a file format that establishes a metagame across various unrelated games by 
 
 <h2 align="center">Contents of this Repository</h2>
 
-This repositiory contains documentation for the ACE engine model and the ACE file format.
+This repositiory contains documentation for the ACE engine model and the ACE file format,
+the specification for said elements,
+and a Java implementation of the Kaeon ACE game engine.
 
 ### Direct Links
 
@@ -53,3 +55,13 @@ The ACE game enigne model is built on the Philosopher's Stone concept. You can f
 If you have any questions or comments, please email the following address:
 
 kaeon.ace@gmail.com
+
+<h2 align="center">Disclaimer</h2>
+
+The current implementation of the Kaeon ACE game engine conforms to the ACE engine model,
+but the modules attached to it are from a pre-existing engine that also went by the name Kaeon ACE.
+
+As such,
+the current implementation,
+while technically usable,
+does not accurately reflect the current specification.
