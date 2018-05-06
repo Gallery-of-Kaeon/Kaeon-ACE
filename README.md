@@ -9,6 +9,8 @@ It provides a cross-engine file format in which a game can be encoded,
 a modular model for game engine design,
 and a file format that establishes a metagame across various unrelated games by amalgamating their save data.
 
+<h2 align="center">Prerequisites</h2>
+
 The ACE game dialect and the ACE metagame dialect are built on the ONE and ONE+ markup languages.
 You can find information on ONE here:
 
@@ -22,7 +24,7 @@ The ACE game enigne model is built on the Philosopher's Stone concept. You can f
 
 [Philosopher's Stone](https://github.com/Gallery-of-Kaeon/Philosophers-Stone/blob/master/README.md)
 
-## Contents of this repository
+<h2 align="center">Contents of this Repository</h2>
 
 This repositiory contains documentation for the ACE engine model and the ACE file format.
 
@@ -46,7 +48,7 @@ This repositiory contains documentation for the ACE engine model and the ACE fil
 
 [Source](https://github.com/Gallery-of-Kaeon/Kaeon-ACE/tree/master/Kaeon%20ACE/API/Source)
 
-## Contact Info
+<h2 align="center">Contact Info</h2>
 
 If you have any questions or comments, please email the following address:
 
