@@ -1,4 +1,8 @@
-# Kaeon ACE
+<h1 align="center">Kaeon ACE</h1>
+
+<p align="center">
+	<img src="https://github.com/Gallery-of-Kaeon/Kaeon-ACE/raw/master/Kaeon%20FUSION/Logo/Kaeon%20ACE%20Logo.png" width="300px" height="300px"/>
+</p>
 
 Kaeon ACE is a system that establishes a standard set of interfaces and features for game engines.
 It provides a cross-engine file format in which a game can be encoded,
