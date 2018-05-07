@@ -52,9 +52,7 @@ The ACE game enigne model is built on the Philosopher's Stone concept. You can f
 
 <h2 align="center">Contact Info</h2>
 
-If you have any questions or comments, please email the following address:
-
-kaeon.ace@gmail.com
+If you have any questions or comments, please email the following address: kaeon.ace@gmail.com
 
 <h2 align="center">Disclaimer</h2>
 
