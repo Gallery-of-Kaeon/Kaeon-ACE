@@ -5,5 +5,5 @@ Standard Kaeon ACE
 		-
 			The Standard Kaeon ACE is a specific set of object elements for the Kaeon ACE dialect
 			that establish a game development framework. It can be incorporated in a use directive
-			using the alias "Standard".
+			using the alias "Standard". All of said elements adhere to standard ACE.
 		-
