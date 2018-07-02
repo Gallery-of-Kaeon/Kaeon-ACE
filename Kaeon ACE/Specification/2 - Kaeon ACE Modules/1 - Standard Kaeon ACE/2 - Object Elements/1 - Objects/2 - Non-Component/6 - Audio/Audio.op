@@ -1,0 +1,22 @@
+Audio
+
+	Philosophy
+	
+		-
+			An audio object stores data for an audio clip.
+		-
+	
+	Principles
+		
+		Type Section
+			
+			-
+				The child of the type section must have the content "Audio".
+			-
+		
+		Data Section
+		
+			-
+				The data section must have one field called "File", with a child that has a file
+				path to an audio file as its content.
+			-

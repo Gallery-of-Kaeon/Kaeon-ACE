@@ -1,0 +1,16 @@
+Tick Rate
+
+	Philosophy
+		
+		-
+			The tick rate field is a field that can be placed in the data section of a directive.
+		-
+	
+	Principles
+		
+		Structure
+		
+			-
+				The tick rate field has the alias "Tick Rate" and has a single child that contains a
+				number as its content.
+			-

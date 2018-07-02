@@ -1,0 +1,31 @@
+Effect
+
+	Philosophy
+	
+		-
+			An effect object stores data for a graphical effect, and may act as a component.
+		-
+	
+	Principles
+		
+		Type Section
+		
+			-
+				The child of the type section must have the content "Effect".
+			-
+		
+		Children Section
+		
+			-
+				The children section may have an indefinite number of transform objects, and up to
+				one color object.
+			-
+		
+		Data Section
+		
+			-
+				The data section must have a field with the alias "Type". This field must have
+				nested within it a single element with the content "Background Color", "Light", or
+				"Fog". It may also have a field with the alias "Intensity", with a single child
+				that has a number as its content.
+			-

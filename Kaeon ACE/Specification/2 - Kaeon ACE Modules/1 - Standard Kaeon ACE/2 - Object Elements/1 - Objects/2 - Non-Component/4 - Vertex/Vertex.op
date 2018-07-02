@@ -1,0 +1,24 @@
+Vertex
+
+	Philosophy
+	
+		-
+			A vertex object stores data for the vertex of a polygon.
+		-
+	
+	Principles
+		
+		Type Section
+		
+			-
+				The child of the type section must have the content "Vertex".
+			-
+		
+		Children Section
+		
+			-
+				The children section must between one and three vector 3 objects, at least one of
+				which must have the alias "Position". The other two, if present must have the
+				aliases "Normal" and "Texture" respectively. The children section may also have up
+				to one color object.
+			-

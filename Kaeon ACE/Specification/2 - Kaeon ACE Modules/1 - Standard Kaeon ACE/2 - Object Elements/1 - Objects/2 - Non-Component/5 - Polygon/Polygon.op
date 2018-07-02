@@ -1,0 +1,29 @@
+Polygon
+
+	Philosophy
+	
+		-
+			A polygon is an object that stores data for a polygon in a mesh.
+		-
+	
+	Principles
+		
+		Type Section
+		
+			-
+				The child of the type section must have the content "Polygon".
+			-
+		
+		Children Section
+			
+			-
+				The children section may contain up to one color object.
+			-
+		
+		Data Section
+		
+			-
+				The data section must have one field with the alias "Indexes", which may have an
+				indefinite number of children, each of which have an integer number as their
+				content.
+			-

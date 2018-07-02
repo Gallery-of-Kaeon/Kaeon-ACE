@@ -1,0 +1,33 @@
+Loadable
+
+	Philosophy
+	
+		-
+			A loadable is an object that reads data from a file and constructs itself based on it.
+			It may or may not serve as a component based on what type it is.
+		-
+	
+	Principles
+		
+		Type Section
+		
+			-
+				The child of the type section must have the content "Loadable".
+			-
+		
+		Children Section
+		
+			-
+				The contents of the children section vary depending on the type specified in the
+				data section.
+			-
+		
+		Data Section
+		
+			-
+				The data section must have a field with the alias "Type", with a child that
+				specifies the type of the loadable, and a field with the alias "File", with a child
+				that has content specifying the file to be loaded from.
+				
+				Any additional fields in the data section vary depending on the specified type.
+			-

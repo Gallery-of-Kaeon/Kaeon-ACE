@@ -1,0 +1,23 @@
+Properties
+
+	Philosophy
+	
+		-
+			A properties object stores data for entity properties, and may act as a component.
+		-
+	
+	Principles
+		
+		Type Section
+		
+			-
+				The child of the type section must have the content "Properties".
+			-
+		
+		Data Section
+		
+			-
+				The data section may have any combination of fields with the aliases "Active" and
+				"Destroyed", each of which, if present, must have a child with either "True" or
+				"False" as its content.
+			-

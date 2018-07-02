@@ -1,0 +1,27 @@
+Kaeon ACE Metagame
+	
+	Philosophy
+	
+		-
+			The Kaeon ACE Metagame is a type of ACE Document containing various ACE Meta object
+			elements each containing save data for a each game particular user's game library.
+		-
+	
+	Principles
+		
+		Structure
+			
+			-
+				A Kaeon ACE Metagame document shall contain an ACE Meta object element for each
+				game in a particular user's library in addition to a Kaeon ACE Meta object element.
+			-
+			
+			Kaeon ACE Meta
+				
+				-
+					A Kaeon ACE Meta element is an ACE Meta element that specifies metadata about
+					the user and their game library.
+					
+					The environment in the data section should be specified as "Kaeon ACE
+					Metagame".
+				-

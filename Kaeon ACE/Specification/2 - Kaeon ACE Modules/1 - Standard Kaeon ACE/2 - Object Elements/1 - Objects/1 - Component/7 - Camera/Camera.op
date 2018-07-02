@@ -1,0 +1,30 @@
+Camera
+	
+	Philosophy
+	
+		-
+			A camera object stores data for a camera, and may act as a component.
+		-
+	
+	Principles
+		
+		Type Section
+		
+			-
+				The child of the type section must have the content "Camera".
+			-
+		
+		Children Section
+		
+			-
+				The children section may contain an indefinite number of transforms, which will
+				apply in order.
+			-
+		
+		Data Section
+			
+			-
+				The data section may have a field with the alias "FOV" with its child having a
+				number as its content. If the FOV is not specified, it will be set to a default
+				value.
+			-

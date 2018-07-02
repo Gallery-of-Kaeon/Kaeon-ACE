@@ -1,0 +1,15 @@
+Height Map
+	
+	Philosophy
+		
+		-
+			A height map is a type of loadable that generates a mesh of a skybox from an image.
+		-
+	
+	Principles
+		
+		Type
+			
+			-
+				The type field in the data section of the loadable must be specified as "Skybox".
+			-

@@ -1,0 +1,29 @@
+Transform
+
+	Philosophy
+		
+		-
+			A transform object stores data for a transformation, and may act as a component.
+		-
+	
+	Principles
+		
+		Type Section
+		
+			-
+				The child of the type section must have the content "Transform".
+			-
+		
+		Children Section
+		
+			-
+				The children section must have a vector 3 object element nested within it.
+			-
+		
+		Data Section
+		
+			-
+				The data section must have a field with the alias "Type". This field must have
+				nested within it a single element with the content "Translation", "Rotation", or
+				"Scale".
+			-
