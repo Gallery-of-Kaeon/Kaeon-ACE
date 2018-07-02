@@ -20,7 +20,8 @@ Kaeon ACE
 				children element if the children element is present.
 				
 				A component object element's type element's child's content will be "Component" and
-				its children element will have a single child that acts as the component.
+				its children element may have an indefinite number of children, each of which acts
+				as a component of the entity declared by its parent.
 				
 				The letter casing of the content of the aforementioned elements is irrelevant.
 			-
