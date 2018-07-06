@@ -61,5 +61,6 @@ but the modules attached to it are from a pre-existing engine that also went by 
 
 As such,
 the current implementation,
+which is referred to as Kaeon ACE Ascent,
 while technically usable,
 does not accurately reflect the current specification.
