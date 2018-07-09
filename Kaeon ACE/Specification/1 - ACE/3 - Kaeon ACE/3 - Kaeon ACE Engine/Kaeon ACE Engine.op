@@ -21,15 +21,15 @@ Kaeon ACE Engine
 				Philosopher's Stones.
 				
 				If any Philosopher's Stone in the framework has a connection not described in this
-				document, the connection must be private in either direction.
+				document, the connection from said stone to the other stone must be private.
 			-
 			
 			Kaeon ACE Stone
 				
 				-
-					All processes have public mutual connections with the Kaeon ACE Stone.
-					
 					The Kaeon ACE Stone will contain a Kaeon ACE Document.
+					
+					The Kaeon ACE Stone is publicly connected to all processes.
 				-
 			
 			Processes
@@ -38,5 +38,7 @@ Kaeon ACE Engine
 					Processes perform operations for the framework using the entities as an
 					interface to the developer.
 					
-					A process will have a public mutual connection with the Kaeon ACE Stone.
+					Each process is privately connected to the Kaeon ACE Stone.
+					
+					A process may be connected to more than one Kaeon ACE Stone.
 				-
