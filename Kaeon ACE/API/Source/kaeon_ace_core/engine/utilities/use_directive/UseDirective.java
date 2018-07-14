@@ -64,4 +64,19 @@ public class UseDirective extends BootstrapProcess {
 		
 		return null;
 	}
+	
+	public void onUpdate() {
+		
+		if(engine.ace.children.size() == 0 && engine.publicConnections.size() <= 1) {
+			
+			if(engine.publicConnections.size() == 1) {
+				
+				if(engine.publicConnections.get(0) == this)
+					System.exit(0);
+			}
+			
+			else
+				System.exit(0);
+		}
+	}
 }

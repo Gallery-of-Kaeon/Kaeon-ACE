@@ -12,7 +12,7 @@ public class PhysicsEngine extends RunningProcess {
 		thread = "Physics";
 	}
 	
-	public void update() {
+	public void onUpdate() {
 		
 	}
 }

@@ -12,7 +12,7 @@ public class ScriptEngine extends RunningProcess {
 		thread = "Script";
 	}
 	
-	public void update() {
+	public void onUpdate() {
 		
 	}
 }

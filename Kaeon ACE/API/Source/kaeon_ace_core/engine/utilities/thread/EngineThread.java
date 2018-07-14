@@ -19,7 +19,7 @@ public class EngineThread implements Runnable {
 			
 			for(int i = 0; i < processes.size(); i++) {
 				
-				if(!processes.get(i).process.running) {
+				if(processes.get(i).process.started && !processes.get(i).process.running) {
 					
 					processes.remove(i);
 					i--;
@@ -35,7 +35,7 @@ public class EngineThread implements Runnable {
 				
 				if(tick) {
 					
-					processes.get(i).process.update();
+					processes.get(i).process.onUpdate();
 					
 					processes.get(i).recentTime = currentTime;
 				}

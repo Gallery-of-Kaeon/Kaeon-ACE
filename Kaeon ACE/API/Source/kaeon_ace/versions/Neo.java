@@ -6,7 +6,7 @@ import kaeon_ace_modules.neo.processes.physics_engine.process.PhysicsEngine;
 import kaeon_ace_modules.neo.processes.rendering_engine.process.RenderingEngine;
 import kaeon_ace_modules.neo.processes.script_engine.process.ScriptEngine;
 
-public class Neo {
+public class NEO {
 	
 	public static void loadNEO(Engine engine) {
 		ACE.connectACE(engine, new PhysicsEngine());
