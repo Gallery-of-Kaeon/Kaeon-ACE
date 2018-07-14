@@ -6,11 +6,11 @@ import kaeon_ace_modules.ascent.processes.scene.utilities.script.Script;
 import kaeon_ace_modules.ascent.utilities.geometry.utilities.animation.scripting.Animation;
 import kaeon_ace_modules.ascent.utilities.geometry.utilities.animation.skeleton.Skeleton;
 import kaeon_ace_modules.ascent.utilities.math.Vector3;
+import kaeon_ace_modules.ascent.utilities.resource.visual.models.parsing.COLLADAParser;
 import kaeon_ace_modules.ascent.utilities.resource.visual.models.parsing.OBJParser;
 import kaeon_ace_modules.ascent.utilities.resource.visual.models.parsing.OFFParser;
 import kaeon_ace_modules.ascent.utilities.resource.visual.models.parsing.PLYParser;
 import kaeon_ace_modules.ascent.utilities.resource.visual.models.parsing.STLParser;
-import kaeon_ace_modules.ascent.utilities.resource.visual.models.parsing.collada.COLLADAParser;
 import kaeon_ace_modules.ascent.utilities.user.GeneralEntity;
 
 public class Model extends GeneralEntity {

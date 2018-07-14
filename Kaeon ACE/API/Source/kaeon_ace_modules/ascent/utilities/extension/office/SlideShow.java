@@ -3,7 +3,7 @@ package kaeon_ace_modules.ascent.utilities.extension.office;
 import kaeon_ace_core.engine.Engine;
 import kaeon_ace_modules.ascent.processes.frame.Frame;
 import kaeon_ace_modules.ascent.processes.keyboard.Keyboard;
-import kaeon_ace_modules.ascent.processes.physics_engine.PhysicsEngine;
+import kaeon_ace_modules.ascent.processes.physics.Physics;
 import kaeon_ace_modules.ascent.processes.renderer.Renderer;
 import kaeon_ace_modules.ascent.processes.scene.Scene;
 import kaeon_ace_modules.ascent.processes.scene.utilities.script.Script;
@@ -22,7 +22,7 @@ public class SlideShow extends Engine {
 	
 	public Frame frame;
 	public Keyboard keyboard;
-	public PhysicsEngine physicsEngine;
+	public Physics physicsEngine;
 	public Renderer renderer;
 	public Scene scene;
 	
@@ -32,7 +32,7 @@ public class SlideShow extends Engine {
 		
 		frame = (Frame) PhilosophersStoneUtilities.get(this, "Frame").get(0);
 		keyboard = (Keyboard) PhilosophersStoneUtilities.get(this, "Keyboard").get(0);
-		physicsEngine = (PhysicsEngine) PhilosophersStoneUtilities.get(this, "Physics Engine").get(0);
+		physicsEngine = (Physics) PhilosophersStoneUtilities.get(this, "Physics Engine").get(0);
 		renderer = (Renderer) PhilosophersStoneUtilities.get(this, "Renderer").get(0);
 		scene = (Scene) PhilosophersStoneUtilities.get(this, "Scene").get(0);
 		

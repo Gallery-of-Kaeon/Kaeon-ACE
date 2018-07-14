@@ -8,7 +8,7 @@ import kaeon_ace_modules.ascent.processes.frame.Frame;
 import kaeon_ace_modules.ascent.processes.keyboard.Keyboard;
 import kaeon_ace_modules.ascent.processes.loader.Loader;
 import kaeon_ace_modules.ascent.processes.mouse.Mouse;
-import kaeon_ace_modules.ascent.processes.physics_engine.PhysicsEngine;
+import kaeon_ace_modules.ascent.processes.physics.Physics;
 import kaeon_ace_modules.ascent.processes.renderer.Renderer;
 import kaeon_ace_modules.ascent.processes.scene.Scene;
 import philosophers_stone.PhilosophersStone;
@@ -48,8 +48,8 @@ public class Bus {
 		return (Mouse) PhilosophersStoneUtilities.get(stone, "Mouse").get(0);
 	}
 	
-	public static PhysicsEngine getPhysicsEngine(PhilosophersStone stone) {
-		return (PhysicsEngine) PhilosophersStoneUtilities.get(stone, "Physics Engine").get(0);
+	public static Physics getPhysicsEngine(PhilosophersStone stone) {
+		return (Physics) PhilosophersStoneUtilities.get(stone, "Physics Engine").get(0);
 	}
 	
 	public static Renderer getRenderer(PhilosophersStone stone) {
