@@ -5,26 +5,9 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.ArrayList;
 
-import kaeon_ace_interface.KaeonACECommand;
-import philosophers_stone.PhilosophersStone;
-import philosophers_stone.PhilosophersStoneUtilities;
-
 public class Aether {
 	
 	public static Object onCall(Object object) {
-		
-		PhilosophersStone stone = (PhilosophersStone) object;
-		
-		if(PhilosophersStoneUtilities.has(stone, "Kaeon ACE"))
-			return null;
-		
-		PhilosophersStoneUtilities.publiclyConnectMutually(stone, new KaeonACECommand());
-		
-		PhilosophersStone tag = new PhilosophersStone();
-		tag.tags.add("Kaeon ACE");
-		
-		PhilosophersStoneUtilities.publiclyConnectMutually(stone, tag);
-		
 		return null;
 	}
 	
