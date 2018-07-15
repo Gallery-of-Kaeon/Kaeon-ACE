@@ -19,9 +19,6 @@ Kaeon ACE Engine
 				
 				The rest of the framework consists of and processes, which are implemented as
 				Philosopher's Stones.
-				
-				If any Philosopher's Stone in the framework has a connection not described in this
-				document, the connection from said stone to the other stone must be private.
 			-
 			
 			Kaeon ACE Stone
@@ -29,7 +26,7 @@ Kaeon ACE Engine
 				-
 					The Kaeon ACE Stone will contain a Kaeon ACE Document.
 					
-					The Kaeon ACE Stone is publicly connected to all processes.
+					The Kaeon ACE Stone is connected to all processes.
 				-
 			
 			Processes
@@ -38,7 +35,7 @@ Kaeon ACE Engine
 					Processes perform operations for the framework using the entities as an
 					interface to the developer.
 					
-					Each process is privately connected to the Kaeon ACE Stone.
+					Each process is connected to the Kaeon ACE Stone.
 					
 					A process may be connected to more than one Kaeon ACE Stone.
 				-
