@@ -1,16 +1,19 @@
-Kaeon ACE
-	
-	Philosophy
-		
+-
+	Kaeon ACE
+-
+	-
+		Philosophy
+	-
 		-
 			Kaeon ACE is a set of object types for the ACE dialect that serve to define a component
 			entity tree to a host environment.
 		-
-	
-	Principles
-		
-		Structure
-			
+	-
+		Principles
+	-
+		-
+			Structure
+		-
 			-
 				Kaeon ACE specifies two object types: entity and component, both of which will have
 				the type element present.

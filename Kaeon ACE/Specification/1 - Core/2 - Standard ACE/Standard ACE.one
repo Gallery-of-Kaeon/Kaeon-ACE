@@ -1,7 +1,9 @@
-Standard ACE
-
-	Philosophy
-	
+-
+	Standard ACE
+-
+	-
+		Philosophy
+	-
 		-
 			Standard ACE is a convention for objects within an ACE document that dictates that all
 			children of the data element of an ACE object that adheres to said convention will
