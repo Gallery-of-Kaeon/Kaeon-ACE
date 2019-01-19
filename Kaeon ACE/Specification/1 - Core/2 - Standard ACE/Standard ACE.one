@@ -1,0 +1,38 @@
+-
+	Standard ACE
+-
+	-
+		Philosophy
+	-
+		-
+			Standard ACE is a the standard convention for the children of the data elements of
+			object elements within ACE documents.
+
+			Under Standard ACE, every child of a data element of an object element may either have
+			the content "Type" or "Fields". The letter case of the aforementioned content is
+			irrelevant.
+		-
+	-
+		Principles
+	-
+		-
+			Type
+		-
+			-
+				The type element shall have exactly one child, the content of which shall specify
+				the type of object that the object element it belongs represents.
+
+				The data elements of a given object element may collectively have no more than one
+				type element.
+			-
+		-
+			Fields
+		-
+			-
+				Fields elements shall may have an indefinite number of children. The content of
+				each child of a fields element specifies the name of a field and the children of
+				said child specify the content of the field.
+
+				There is no limit on the number of fields elements that may be present within a
+				given object element.
+			-

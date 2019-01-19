@@ -14,11 +14,11 @@ Kaeon ACE Engine
 			-
 				The Kaeon ACE engine is built on a Philosopher's Atlas.
 				
-				The core of the framework is a single Philosopher's Stone, referred to as the Kaeon
-				ACE Stone.
+				The core of the framework is a single Philosopher's Stone module, referred to as
+				the Kaeon ACE Stone.
 				
 				The rest of the framework consists of and processes, which are implemented as
-				Philosopher's Stones.
+				Philosopher's Stone modules.
 			-
 			
 			Kaeon ACE Stone

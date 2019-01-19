@@ -1,0 +1,30 @@
+-
+	Kaeon ACE
+-
+	-
+		Philosophy
+	-
+		-
+			Kaeon ACE is a set of object types for the Standard ACE dialect that serve to define a
+			component entity tree.
+		-
+	-
+		Principles
+	-
+		-
+			Structure
+		-
+			-
+				Kaeon ACE specifies two object types: entity and component.
+				
+				An entity object element's type element shall be present, and said type element's
+				child's content will be "Entity", and entity objects may have both entity object
+				elements and component object elements as children.
+				
+				A component object element's type element shall be present, and said type element's
+				child's content will be "Component", and component objects may have an indefinite
+				number of children, each of which acts as a component of the entity declared by its
+				parent.
+				
+				The letter casing of the content of the aforementioned elements is irrelevant.
+			-

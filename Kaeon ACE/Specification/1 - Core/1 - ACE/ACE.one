@@ -17,10 +17,9 @@
 				An ACE document with consists entirely of object elements.
 				
 				The content of an object element specifies its alias. An object element will either
-				have a child with the content "Reference", or one or all of a child with the
-				content "Type", a child with the content "Children", and a child with the content
-				"Data". The letter casing of the content of the aforementioned elements is
-				irrelevant.
+				have a child with the content "Reference", or any number of children with the
+				either the content "Children" or "Data". The letter casing of the content of the
+				aforementioned elements is irrelevant.
 				
 				If the "Reference" element is present, it will have a single child that references
 				a predefined object to act as the object specified by its parent. If referencing an
@@ -28,13 +27,10 @@
 				will take priority to subsequently declared objects, and objects will take greater
 				priority the closer they are to the referencing object.
 				
-				If the "Type" element is present, it will have a single child with content that
-				specifies the type of the object that the object element specifies.
+				Every child of a "Children" element is itself an object element that specifies an
+				object which is aggregated within the object specified by the object element
+				containing said "Children" element.
 				
-				If the "Children" element is presents, each of its children will be other object
-				elements that specify objects that are aggregated within the object specified by
-				the object element.
-				
-				If the "Data" element is present, its children will specify miscellaneous data
-				about the object specified by the object element.
+				Every child of a "Data" element specifies miscellaneous data about the object
+				specified by the object element containing said "Data" element.
 			-
