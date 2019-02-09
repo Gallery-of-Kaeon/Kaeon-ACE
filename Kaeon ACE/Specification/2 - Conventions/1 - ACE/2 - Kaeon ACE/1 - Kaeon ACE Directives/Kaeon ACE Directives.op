@@ -3,7 +3,7 @@ Kaeon ACE Directives
 	Philosophy
 	
 		-
-			Kaeon ACE directives are ACE object elements that adhere to standard ACE which may be
+			Kaeon ACE directives are ACE object elements that adhere to connected ACE which may be
 			used as the children of component objects in Kaeon ACE to specify directive to the host
 			environment.
 		-

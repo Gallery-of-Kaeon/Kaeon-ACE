@@ -5,32 +5,6 @@
 		Philosophy
 	-
 		-
-			ACE is a ONE dialect that dictates a set of objects.
+			ACE is a system that allows ONE elements to be interpreted as object nodes within an
+			object model, structured according to their placement relative to each other.
 		-
-	-
-		Principles
-	-
-		-
-			Structure
-		-
-			-
-				An ACE document with consists entirely of object elements.
-				
-				The content of an object element specifies its alias. An object element will either
-				have a child with the content "Reference", or any number of children with the
-				either the content "Children" or "Data". The letter casing of the content of the
-				aforementioned elements is irrelevant.
-				
-				If the "Reference" element is present, it will have a single child that references
-				a predefined object to act as the object specified by its parent. If referencing an
-				object that has the same alias as another object, any previously declared objects
-				will take priority to subsequently declared objects, and objects will take greater
-				priority the closer they are to the referencing object.
-				
-				Every child of a "Children" element is itself an object element that specifies an
-				object which is aggregated within the object specified by the object element
-				containing said "Children" element.
-				
-				Every child of a "Data" element specifies miscellaneous data about the object
-				specified by the object element containing said "Data" element.
-			-
