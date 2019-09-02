@@ -7,7 +7,7 @@
 Kaeon ACE is a system that establishes a standard set of interfaces and features for game engines.
 It provides a cross-engine file format in which a game can be encoded,
 a modular model for game engine design,
-and a file format that establishes a metagame across various unrelated games by amalgamating their save data.
+and a file format that establishes a metagame across various games by amalgamating their save data.
 
 <h2 align="center">Contents of this Repository</h2>
 
