@@ -10,7 +10,7 @@ window.location.href.replace(
 var io = require("https://raw.githubusercontent.com/Gallery-of-Kaeon/JavaScript-Utilities/master/JavaScript%20Utilities/IO/ioBrowser.js")
 var onePlus = require("https://raw.githubusercontent.com/Gallery-of-Kaeon/JavaScript-Utilities/master/JavaScript%20Utilities/United%20Bootstrap/ONEPlus.js");
 
-require("https://raw.githubusercontent.com/Kaeon-ACE/GhostHost-XP/master/GhostHost%20XP/source/game/KaeonACE.js").run(
+require("https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-ACE/master/Kaeon%20ACE/API/Kaeon%20ACE/Babylon/KaeonACE.js").run(
 	onePlus.readONEPlus(io.open(urlArgs["kaeonace"])),
-	require("https://raw.githubusercontent.com/Kaeon-ACE/GhostHost-XP/master/GhostHost%20XP/source/game/KaeonACEModules.js")
+	require("https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-ACE/master/Kaeon%20ACE/API/Kaeon%20ACE/Babylon/KaeonACEModules.js")
 );
