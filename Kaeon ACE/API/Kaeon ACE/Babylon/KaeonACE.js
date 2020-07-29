@@ -107,6 +107,8 @@ function run(ace, modules, element) {
 		);
 
 	core.time = (new Date()).getTime();
+
+	xr(core);
 	
 	core.modules.forEach(
 		function(item) {
@@ -178,6 +180,10 @@ function run(ace, modules, element) {
 			core.engine.resize();
 		}
 	);
+}
+
+async function xr(core) {
+	await core.scene.createDefaultXRExperienceAsync();
 }
 
 module.exports = {
