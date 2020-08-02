@@ -55,8 +55,6 @@ function run(core, ace, element) {
 			}
 		);
 
-	console.log(core);
-
 	core.element.addEventListener(
 		"contextmenu",
 		function(event) {
