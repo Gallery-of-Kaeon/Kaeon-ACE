@@ -1,5 +1,5 @@
-var fusion = require("./FUSION.js");
-var philosophersStone = require("./PhilosophersStone.js");
+var fusion = require("https://raw.githubusercontent.com/Gallery-of-Kaeon/JavaScript-Utilities/master/JavaScript%20Utilities/United%20Bootstrap/FUSION.js");
+var philosophersStone = require("https://raw.githubusercontent.com/Gallery-of-Kaeon/Philosophers-Stone/master/Philosopher's%20Stone/API/JavaScript/PhilosophersStone.js");
 
 let ACEModule = function() {
 
