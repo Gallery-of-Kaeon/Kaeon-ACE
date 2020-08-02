@@ -265,7 +265,7 @@ var model = {
 	onDeserialize: function(core, ace, entity) {
 
 		if(one.getChild(ace, "model") != null) {
-
+			
 			let source = one.getChild(one.getChild(ace, "model"), "source").children[0].content;
 	
 			let model = BABYLON.SceneLoader.ImportMesh("", source.substring(0, source.lastIndexOf("/") + 1), source.substring(source.lastIndexOf("/") + 1), core.scene, function (meshes) {          
@@ -370,16 +370,26 @@ var test = {
 	}
 };
 
-module.exports = [
-	audio,
-	ball,
-	camera,
-	cursor,
-	id,
-	input,
-	light,
-	model,
-	script,
-	skybox,
-	test
-];
+module.exports = function(core) {
+
+	let modules = [
+		audio,
+		ball,
+		camera,
+		cursor,
+		id,
+		input,
+		light,
+		model,
+		script,
+		skybox,
+		test
+	];
+
+	for(let i = 0; i < modules.length; i++) {
+
+		modules[i].tags = ["Kaeon ACE"];
+
+		philosophersStone.connect(core, modules[i], [], true);
+	}
+};

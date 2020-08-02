@@ -13,9 +13,12 @@ function loadComponent(core, ace, entity) {
 	);
 }
 
-function loadEntity(core, ace) {
+function loadEntity(core, ace, entity) {
 	
-	var entity = { parent: null, children: [], components: [] };
+	entity =
+		entity != null ?
+			entity :
+			{ parent: null, children: [], components: [] };
 
 	ace.children.forEach(
 		function(item) {
@@ -30,19 +33,29 @@ function loadEntity(core, ace) {
 
 			else if(item.content.toLowerCase() == "component")
 				loadComponent(core, item, entity);
+
+			else
+				loadEntity(core, item, entity);
 		}
 	);
 
 	return entity;
 }
 
-function run(ace, modules, element) {
-	
-	var core = {};
+function run(core, ace, element) {
 
 	core.ace = ace != null ? ace : new one.Element();
-	core.modules = modules != null ? modules : [];
 	core.element = element != null ? element : ui.root;
+
+	core.modules =
+		philosophersStone.retrieve(
+			philosophersStone.traverse(core),
+			function(item) {
+				return philosophersStone.isTagged(item, "Kaeon ACE");
+			}
+		);
+
+	console.log(core);
 
 	core.element.addEventListener(
 		"contextmenu",
