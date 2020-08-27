@@ -45,7 +45,7 @@ function loadEntity(core, ace, entity) {
 function run(core, ace, element) {
 
 	core.ace = ace != null ? ace : new one.Element();
-	core.element = element != null ? element : ui.root;
+	core.element = element != null ? element : document.documentElement;
 
 	core.modules =
 		philosophersStone.retrieve(
@@ -76,27 +76,29 @@ function run(core, ace, element) {
 	ui.load("https://code.jquery.com/pep/0.4.3/pep.js");
 	
 	ui.extend(
-		ui.setStyle(
+		ui.set(
 			core.element,
-			[
-				["overflow", "hidden"],
-				["margin", "0"],
-				["padding", "0"]
-			]
+			{
+				style: {
+					overflow: "hidden",
+					margin: 0,
+					padding: 0
+				}
+			}
 		),
-		ui.setStyle(
-			ui.specify(
-				ui.create("canvas"),
-				[
-					["id", "renderCanvas"],
-					["touch-action", "none"]
-				]
-			),
-			[
-				["width", "100%"],
-				["height", "100%"],
-				["touch-action", "none"]
-			]
+		ui.create(
+			{
+				tag: "canvas",
+				attributes: {
+					id: "renderCanvas",
+					"touch-action": "none"
+				},
+				style: {
+					width: "100%",
+					height: "100%",
+					"touch-action": "none"
+				}
+			}
 		)
 	);
 	
