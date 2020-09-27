@@ -9,6 +9,7 @@
 
  */
 
+var inputUtils = require("https://raw.githubusercontent.com/Gallery-of-Kaeon/JavaScript-Utilities/master/JavaScript%20Utilities/UI/input.js");
 var one = require("https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-FUSION/master/Kaeon%20FUSION/APIs/ONE/JavaScript/ONE.js");
 var onePlus = require("https://raw.githubusercontent.com/Gallery-of-Kaeon/JavaScript-Utilities/master/JavaScript%20Utilities/United%20Bootstrap/ONEPlus.js");
 var philosophersStone = require("https://raw.githubusercontent.com/Gallery-of-Kaeon/Philosophers-Stone/master/Philosopher's%20Stone/API/JavaScript/PhilosophersStone.js");
@@ -143,100 +144,11 @@ var cursor = {
 
 var input = {
 
-	scroll: false,
-
 	onDefault: function(core) {
 		
-		core.input = {
-			pc: {
-				keyboard: [],
-				mouse: {
-					position: {
-						x: 0,
-						y: 0
-					},
-					buttons: {
-						left: false,
-						middle: false,
-						right: false
-					},
-					scroll: 0
-				}
-			}
-		};
+		core.input = { };
 
-		core.element.addEventListener(
-			"keydown",
-			function(event) {
-				
-				if(!core.input.pc.keyboard.includes(event.keyCode))
-					core.input.pc.keyboard.push(event.keyCode);
-			}
-		);
-
-		core.element.addEventListener(
-			"keyup",
-			function(event) {
-
-				for(let i = 0; i < core.input.pc.keyboard.length; i++) {
-					
-					if(core.input.pc.keyboard[i] == event.keyCode) {
-
-						core.input.pc.keyboard.splice(i, 1);
-
-						i--;
-					}
-				}
-			}
-		);
-
-		core.element.addEventListener(
-			"mousedown",
-			function(event) {
-				
-				if(event.button == 0)
-					core.input.pc.mouse.buttons.left = true;
-				
-				if(event.button == 1)
-					core.input.pc.mouse.buttons.middle = true;
-				
-				if(event.button == 2)
-					core.input.pc.mouse.buttons.right = true;
-			}
-		);
-
-		core.element.addEventListener(
-			"mouseup",
-			function(event) {
-
-				if(event.button == 0)
-					core.input.pc.mouse.buttons.left = false;
-				
-				if(event.button == 1)
-					core.input.pc.mouse.buttons.middle = false;
-				
-				if(event.button == 2)
-					core.input.pc.mouse.buttons.right = false;
-			}
-		);
-
-		core.element.addEventListener(
-			"wheel",
-			function(event) {
-
-				core.input.pc.mouse.scroll = event.deltaY;
-
-				input.scroll = true;
-			}
-		);
-	},
-
-	onUpdate: function(core, delta) {
-
-		if(!input.scroll)
-			core.input.pc.mouse.scroll = 0;
-
-		input.scroll = false;
+		inputUtils.addInput(core.element, core.input);
 	}
 };
 

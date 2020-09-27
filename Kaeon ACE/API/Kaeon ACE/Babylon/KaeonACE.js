@@ -94,6 +94,9 @@ function run(core, ace, element) {
 					"touch-action": "none"
 				},
 				style: {
+					position: "absolute",
+					left: "0%",
+					top: "0%",
 					width: "100%",
 					height: "100%",
 					"touch-action": "none"
