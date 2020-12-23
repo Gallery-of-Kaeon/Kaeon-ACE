@@ -30,7 +30,7 @@ Upload the code online such that the raw code can be accessed via a URL.
 Then,
 append the link to the raw code to the end of the following URL:
 
-    https://gallery-of-kaeon.github.io/?path=https%3A%2F%2Fraw.githubusercontent.com%2FGallery-of-Kaeon%2FJavaScript-Utilities%2Fmaster%2FJavaScript%20Utilities%2FUnited%20Bootstrap%2Findex.html&unitedJS=https%3A%2F%2Fraw.githubusercontent.com%2FGallery-of-Kaeon%2FKaeon-ACE%2Fmaster%2FKaeon%20ACE%2FShadow%20Host%2FKaeonACEHost.js&kaeonace=
+    https://gallery-of-kaeon.github.io/?unitedJS=https%3A%2F%2Fraw.githubusercontent.com%2FGallery-of-Kaeon%2FKaeon-ACE%2Fmaster%2FKaeon%20ACE%2FShadow%20Host%2FKaeonACEHost.js&kaeonace=
 
 If you then go to said URL,
 the game will render in the browser.
