@@ -1,7 +1,7 @@
 <h1 align="center">Kaeon ACE</h1>
 
 <p align="center">
-	<img src="https://github.com/Gallery-of-Kaeon/Kaeon-ACE/raw/master/Kaeon%20ACE/Logo/Kaeon%20ACE.png" width="300px" height="300px"/>
+	<img src="https://github.com/Gallery-of-Kaeon/Kaeon-ACE/raw/master/Kaeon%20ACE/Documentation/Logo/Kaeon%20ACE.png" width="300px" height="300px"/>
 </p>
 
 Kaeon ACE is a file format for encoding the contents of a scene in a game engine,
@@ -15,8 +15,6 @@ and a JavaScript based Kaeon ACE interface for the Babylon.js game engine.
 ### Direct Links
 
 #### [Documentation](https://github.com/Gallery-of-Kaeon/Kaeon-ACE/blob/master/Kaeon%20ACE/Documentation/Game%20Dialect/README.md)
-
-#### [Specification](https://github.com/Gallery-of-Kaeon/Kaeon-ACE/tree/master/Kaeon%20ACE/Specification)
 
 #### [Source](https://github.com/Gallery-of-Kaeon/Kaeon-ACE/tree/master/Kaeon%20ACE/API/Source)
 
