@@ -14,9 +14,9 @@ and a JavaScript based Kaeon ACE interface for the Babylon.js game engine.
 
 ### Direct Links
 
-#### [Documentation](https://github.com/Gallery-of-Kaeon/Kaeon-ACE/blob/master/Kaeon%20ACE/Documentation/Game%20Dialect/README.md)
+#### [Documentation](https://github.com/Gallery-of-Kaeon/Kaeon-ACE/blob/master/Kaeon%20ACE/Documentation/Guide/Game%20Dialect/README.md)
 
-#### [Source](https://github.com/Gallery-of-Kaeon/Kaeon-ACE/tree/master/Kaeon%20ACE/API/Source)
+#### [Source](https://github.com/Gallery-of-Kaeon/Kaeon-ACE/tree/master/Kaeon%20ACE/Source)
 
 <h2 align="center">Publish Your Game For Free!</h2>
 
@@ -39,11 +39,11 @@ The Kaeon ACE file format is built on the ONE and ONE+ markup languages.
 
 You can find information on ONE here:
 
-[ONE](https://github.com/Gallery-of-Kaeon/Kaeon-FUSION/blob/master/Kaeon%20FUSION/Documentation/1%20-%20Foundations/1%20-%20ONE/README.md)
+[ONE](https://github.com/Gallery-of-Kaeon/Kaeon-FUSION/blob/master/Kaeon%20FUSION/Documentation/Guide/1%20-%20Foundations/1%20-%20ONE/README.md)
 
 and you can find information on ONE+ here:
 
-[ONE+](https://github.com/Gallery-of-Kaeon/Kaeon-FUSION/blob/master/Kaeon%20FUSION/Documentation/1%20-%20Foundations/2%20-%20ONE%2B/README.md)
+[ONE+](https://github.com/Gallery-of-Kaeon/Kaeon-FUSION/blob/master/Kaeon%20FUSION/Documentation/Guide/1%20-%20Foundations/2%20-%20ONE%2B/README.md)
 
 <h2 align="center">Contact Info</h2>
 
