@@ -1,5 +1,5 @@
 var moduleDependencies = {
-	one: "",
+	one: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-FUSION/master/Kaeon%20FUSION/Source/Engine/ONE.js",
 };
 
 var one = require(moduleDependencies.one);

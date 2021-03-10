@@ -11,11 +11,11 @@
 
 var moduleDependencies = {
 	modules: {
-		cameraModules: "",
-		miscModules: "",
-		standardModules: ""
+		cameraModules: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-ACE/master/Kaeon%20ACE/Source/API/Babylon/Modules/Units/cameraModules.js",
+		miscModules: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-ACE/master/Kaeon%20ACE/Source/API/Babylon/Modules/Units/miscModules.js",
+		standardModules: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-ACE/master/Kaeon%20ACE/Source/API/Babylon/Modules/Units/standardModules.js"
 	},
-	philosophersStone: "",
+	philosophersStone: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Philosophers-Stone/master/Philosopher's%20Stone/API/PhilosophersStone.js",
 };
 
 var philosophersStone = require(moduleDependencies.philosophersStone);
