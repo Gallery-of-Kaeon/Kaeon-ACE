@@ -1,11 +1,17 @@
 var moduleDependencies = {
 	inputUtils: "https://raw.githubusercontent.com/Gallery-of-Kaeon/JavaScript-Utilities/master/JavaScript%20Utilities/Utilities/UI/Visual/General/input.js",
 	one: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-FUSION/master/Kaeon%20FUSION/Source/Engine/ONE.js",
+	onePlus: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-FUSION/master/Kaeon%20FUSION/Source/Engine/ONEPlus.js",
+	oneSuite: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-FUSION/master/Kaeon%20FUSION/Source/Engine/ONESuite.js",
+	philosophersStone: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Philosophers-Stone/master/Philosopher's%20Stone/API/PhilosophersStone.js",
 	youtube: "https://raw.githubusercontent.com/Gallery-of-Kaeon/JavaScript-Utilities/master/JavaScript%20Utilities/Utilities/UI/Audio/playYoutubeAudio.js"
 };
 
 var inputUtils = require(moduleDependencies.inputUtils);
 var one = require(moduleDependencies.one);
+var onePlus = require(moduleDependencies.onePlus);
+var oneSuite = require(moduleDependencies.oneSuite);
+var philosophersStone = require(moduleDependencies.philosophersStone);
 var youtube = require(moduleDependencies.youtube);
 
 var audio = {
@@ -35,23 +41,6 @@ var audio = {
 
 			if(medium == "youtube")
 				youtube.playYoutubeAudio(source, null, true);
-		}
-	}
-};
-
-var ball = {
-
-	onDeserialize: function(core, ace, entity) {
-
-		if(one.getChild(ace, "ball") != null) {
-	
-			let ball = BABYLON.MeshBuilder.CreateSphere(
-				"sphere",
-				{ diameter: 2 },
-				core.scene
-			);
-
-			entity.components.push(ball);
 		}
 	}
 };
@@ -114,6 +103,48 @@ var model = {
 	}
 };
 
+var move = {
+
+	id: null,
+
+	onDefault: function(core) {
+		
+		move.id = philosophersStone.retrieve(
+			philosophersStone.traverse(core),
+			function(item) {
+				return philosophersStone.isTagged(item, "ID");
+			}
+		)[0];
+
+
+	},
+
+	onUpdate: function(core, delta) {
+		// console.log(delta);
+	},
+
+	onCall: function(core, data) {
+		
+		let command = onePlus.readONEPlus("" + data);
+
+		if(one.getChild(command, "move") != null) {
+			
+			let item = one.getChild(command, "move").children[0];
+
+			let entity = move.id.reference[item.content];
+
+			for(let i = 0; i < entity.components.length; i++) {
+				
+				if(entity.components[i].position != null) {
+					entity.components[i].position.x += Number(item.children[0].content);
+					entity.components[i].position.y += Number(item.children[1].content);
+					entity.components[i].position.z += Number(item.children[2].content);
+				}
+			}
+		}
+	}
+};
+
 var script = {
 
 	scripts: [], // { language (optional, same as universal preprocessor), code }
@@ -128,68 +159,48 @@ var script = {
 		
 		for(let i = 0; i < this.scripts.length; i++) {
 			
-			let language = one.getChild(this.scripts[i], "language").children[0].content.toLowerCase().trim();
-			let code = one.getChild(this.scripts[i], "code").children[0].content
+			let start = one.getChild(this.scripts[i], "start");
+			let update = one.getChild(this.scripts[i], "update");
 
-			try {
+			if(!this.scripts[i].started)
+				this.executeSubscript(start, core, delta);
 
-				if(language == "js" || language == "javascript")
-					eval(code);
-			}
+			this.executeSubscript(update, core, delta);
 
-			catch(error) {
-
-			}
+			this.scripts[i].started = true;
 		}
-	}
-};
-
-var skybox = {
-
-	skyboxes: [],
-
-	onDeserialize: function(core, ace, entity) {
-
-		if(one.getChild(ace, "skybox") != null) {
-		
-			var skybox = BABYLON.MeshBuilder.CreateBox("skyBox", { size: 10000.0 }, core.scene);
-	
-			var skyboxMaterial = new BABYLON.StandardMaterial("skyBox", core.scene);
-			
-			skyboxMaterial.backFaceCulling = false;
-
-			skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture(
-				one.getChild(
-					one.getChild(ace, "skybox"),
-					"source"
-				).children[0].content, core.scene);
-
-			skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
-			skyboxMaterial.disableLighting = true;
-	
-			skybox.material = skyboxMaterial;
-
-			this.skyboxes.push(skybox);
-
-			entity.components.push(skybox);
-		}	
 	},
 
-	onUpdate: function(core, delta) {
-		
-		for(let i = 0; i < this.skyboxes.length; i++)
-			this.skyboxes[i].position = core.camera.position;
+	executeSubscript: function(subscript, core, delta) {
+
+		if(subscript == null)
+			return;
+
+		let language = one.getChild(subscript, "language").children[0].content.toLowerCase().trim().split(" ").join("");
+		let source = one.getChild(subscript, "source").children[0].content;
+
+		try {
+
+			if(language == "kf" || language == "kaeonfusion")
+				oneSuite.process(source);
+
+			if(language == "js" || language == "javascript")
+				((core, delta) => { eval(source); })(core, delta);
+		}
+
+		catch(error) {
+
+		}
 	}
 };
 
 module.exports = [
 	audio,
-	ball,
 	cursor,
 	id,
 	input,
 	light,
 	model,
-	script,
-	skybox
+	move,
+	script
 ];

@@ -12,7 +12,7 @@
 var moduleDependencies = {
 	modules: {
 		cameraModules: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-ACE/master/Kaeon%20ACE/Source/API/Babylon/Modules/Units/cameraModules.js",
-		miscModules: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-ACE/master/Kaeon%20ACE/Source/API/Babylon/Modules/Units/miscModules.js",
+		geometryModules: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-ACE/master/Kaeon%20ACE/Source/API/Babylon/Modules/Units/geometryModules.js",
 		standardModules: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-ACE/master/Kaeon%20ACE/Source/API/Babylon/Modules/Units/standardModules.js"
 	},
 	philosophersStone: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Philosophers-Stone/master/Philosopher's%20Stone/API/PhilosophersStone.js",
@@ -23,10 +23,10 @@ var philosophersStone = require(moduleDependencies.philosophersStone);
 module.exports = function(core) {
 
 	let modules = [];
-
-	modules = modules.concat(require(moduleDependencies.modules.cameraModules));
-	modules = modules.concat(require(moduleDependencies.modules.miscModules));
-	modules = modules.concat(require(moduleDependencies.modules.standardModules));
+	
+	Object.values(moduleDependencies.modules).forEach((unit) => {
+		modules = modules.concat(require(unit));
+	});
 
 	for(let i = 0; i < modules.length; i++) {
 
