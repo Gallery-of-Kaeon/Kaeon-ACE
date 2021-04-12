@@ -1,5 +1,5 @@
 var moduleDependencies = {
-	moduleUtilities: "",
+	moduleUtilities: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-ACE/master/Kaeon%20ACE/Source/API/Babylon/Modules/Utilities/moduleUtilities.js",
 	one: "https://raw.githubusercontent.com/Gallery-of-Kaeon/Kaeon-FUSION/master/Kaeon%20FUSION/Source/Engine/ONE.js",
 };
 
